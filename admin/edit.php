@@ -93,9 +93,7 @@ if(isset($_POST["submit"])){
 
                                 <div class="input-group">
                                     <button type="submit" class="btn btn-success btn-user btn-block" name="submit">Submit</button>
-                                    <button class="btn btn-success btn-user btn-block">
-                                        <a class="text-white" href="index.php">Cancel</a>
-                                    </button>
+                                    <a class="text-white btn btn-success btn-user btn-block" href="index.php">Cancel</a>
                                 </div>
                                 <hr>
                             </form>

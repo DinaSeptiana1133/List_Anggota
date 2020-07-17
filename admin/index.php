@@ -64,7 +64,7 @@ $dft = query("SELECT * FROM daftar");
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary text-right">
-                <a href="tambah.php">Tambah Data</h6> </a>
+                <a href="tambah.php" class="btn btn-primary btn-icon-split"><i class="icon text-white-50 fas fa-check"></i>Tambah Data</h6> </a>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -88,8 +88,12 @@ $dft = query("SELECT * FROM daftar");
                   <tr>
                     <td><?php echo $i; ?></td>
                     <td>
-                        <a href="edit.php?id=<?php echo $row["id"]; ?>">Edit</a> |
-                        <a href="hapus.php?id=<?php echo $row["id"]; ?>" onclick="return confirm('Hapus Data?');">Hapus</a>
+                      <a href="edit.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary btn-icon-split">
+                        <i class="icon text-white-50 fas fa-info-circle"></i> Edit
+                      </a> |
+                      <a href="hapus.php?id=<?php echo $row["id"]; ?>" onclick="return confirm('Hapus Data?');" class="btn btn-primary btn-icon-split mt-2">
+                        <i class="icon text-white-50 fas fa-trash"></i> Hapus
+                      </a>
                     </td>
                     <td><img src="../img/<?php echo $row["gambar"]; ?>" width="70"></td>
                     <td><?php echo $row["nama"]; ?></td>
