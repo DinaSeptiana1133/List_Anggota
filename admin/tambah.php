@@ -59,46 +59,67 @@ if($gambar != "") {
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../assets/css/style1.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <title>Daftar Siswa Kelas</title>
   </head>
   <body>
-      <center>
-        <h1 class="mt-4 text-primary">Tambah Data</h1> <a class="container" href="index.php">Cancel</a>
-      <center>
-      <form method="POST" action="" enctype="multipart/form-data" >
-      <section class="base">
-        <div>
-          <label>Nama :</label>
-          <input type="text" name="nama" autofocus="" required="" />
-        </div>
-        <div>
-          <label>Email :</label>
-         <input type="text" name="email" />
-        </div>
-        <div>
-          <label>Alamat :</label>
-         <input type="text" name="alamat" />
-        </div>
-        <div>
-          <label>Tanggal Lahir :</label>
-         <input type="text" name="tanggal_lahir" />
-        </div>
-        <div>
-          <label>Umur :</label>
-         <input type="text" name="umur" />
-        </div>
-        <div>
-          <label>Jenis Kelamin :</label>
-         <input type="text" name="jenis_kelamin" />
-        </div>
-        <div>
-          <label>Gambar :</label>
-         <input type="file" name="gambar" required="" />
-        </div>
-        <div>
-         <button class="btn btn-primary" type="submit" name="submit">Simpan</button>
-        </div>
+    <center>
+      <h1 class="mt-4 text-light">Tambah Data</h1> 
+    <center>
+    <hr>
+
+    <section class="container-fluid">
+      <section class="row">
+        <section class="col-12 col-sm-6 col-md-3">
+          <form class="container " method="POST" action="" enctype="multipart/form-data" align="left" >
+            <div class="form-group">
+              <label>Nama :</label>
+              <input type="text" name="nama" autofocus="" required=""  class="form-control mr-sm-2 " />
+            </div>
+        
+            <div class="form-group">
+              <label>Email :</label>
+              <input type="text" name="email" class="form-control form-control-user" required=""/>
+            </div>
+
+            <div class="form-group">
+              <label>Alamat :</label>
+              <input type="text" name="alamat" class="form-control form-control-user" required="" />
+            </div>
+
+            <div class="form-group">
+              <label>Tanggal Lahir :</label>
+              <input type="text" name="tanggal_lahir" class="form-control form-control-user" required=""/>
+            </div>
+
+            <div class="form-group">
+              <label>Umur :</label>
+              <input type="text" name="umur" class="form-control form-control-user" required=""/>
+            </div>
+
+            <div class="form-group">
+              <label>Jenis Kelamin :</label>
+              <input type="text" name="jenis_kelamin" class="form-control form-control-user" required=""/>
+            </div>
+
+            <div class="form-group">
+              <label>Gambar :</label>
+              <input type="file" name="gambar" required="" required=""/>
+            </div>
+          
+            <div class="form-group row">
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-primary" type="submit" name="submit">Simpan</button>
+              </div>
+          
+              <div class="col-sm-6">
+                <a class=" btn btn-danger" href="index.php">Cancel</a>
+              </div>
+            </div>
+          </form>
         </section>
-      </form>
-  </body>
+      </section>
+    </section>
+</body>
 </html>
