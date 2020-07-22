@@ -64,17 +64,14 @@ $dft = query("SELECT * FROM daftar");
           <div class="card shadow mb-4">
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                   <tr>
                     <th>No</th>
+                    <th>Keterangan</th>
                     <th>Foto</th>
                     <th>Nama</th>
                     <th>Email</th>
-                    <th>Alamat</th>
-                    <th>Tanggal lahir</th>
-                    <th>Umur</th>
-                    <th>Jenis kelamin</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -82,13 +79,14 @@ $dft = query("SELECT * FROM daftar");
                   <?php foreach($dft as $row) : ?>
                   <tr>
                     <td><?php echo $i; ?></td>
-                    <td><img src="../img/<?php echo $row["gambar"]; ?>" width="70"></td>
+                    <td>
+                      <a href="detail.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary btn-icon-split">
+                        <i class="icon text-white-50 fas fa-info-circle"></i>detail
+                      </a>
+                    </td>
+                    <td><img src="../assets/img/<?php echo $row["gambar"]; ?>" width="70"></td>
                     <td><?php echo $row["nama"]; ?></td>
                     <td><?php echo $row["email"]; ?></td>
-                    <td><?php echo $row["alamat"]; ?></td>
-                    <td><?php echo $row["tanggal_lahir"]; ?></td>
-                    <td><?php echo $row["umur"]; ?></td>
-                    <td><?php echo $row["jenis_kelamin"]; ?></td>
                   </tr>
                   <?php  $i++; ?>
                   <?php endforeach; ?>

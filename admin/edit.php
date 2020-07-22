@@ -1,4 +1,4 @@
-        <?php
+<?php
 session_start();
 
 if(isset($_SESSION["login"])){
@@ -54,7 +54,7 @@ if(isset($_POST["submit"])){
                                 <div class="form-group row">
                                     <div class="col-sm-12 mb-3 mb-sm-0">
                                         <label for="gambar"> Gambar  </label>
-                                        <img src="img/<?= $df['gambar']; ?>" width="40" > 
+                                        <img src="../assets/img/<?= $df['gambar']; ?>" width="40" > 
                                         <input type="file" name="gambar" id="gambar">
                                     </div>
                                 </div>
@@ -71,13 +71,13 @@ if(isset($_POST["submit"])){
                                     </div>
 
                                     <div class="col-sm-6">
-                                        <label for="tanggal_lahir"> Tanggal lahir  </label>
-                                        <input class="form-control" type="text" name="tanggal_lahir" id="tanggal_lahir" value="<?php echo $df["tanggal_lahir"]; ?>">
+                                        <label for="alamat"> Alamat </label>
+                                        <input class="form-control" type="text" name="alamat" id="alamat" value="<?php echo $df["alamat"]; ?>">
                                     </div>
 
                                     <div class="col-sm-6">
-                                        <label for="umur"> Umur  </label>
-                                        <input class="form-control form-control-user" type="text" name="umur" id="umur" value="<?php echo $df["umur"]; ?>">
+                                        <label for="tanggal_lahir"> Tanggal lahir  </label>
+                                        <input class="form-control" type="text" name="tanggal_lahir" id="tanggal_lahir" value="<?php echo $df["tanggal_lahir"]; ?>">
                                     </div>
 
                                     <div class="col-sm-6">
@@ -86,8 +86,78 @@ if(isset($_POST["submit"])){
                                     </div>
 
                                     <div class="col-sm-6">
-                                        <label for="alamat"> Alamat  </label>
-                                        <input class="form-control" type="text" name="alamat" id="alamat" value="<?php echo $df["alamat"]; ?>">
+                                        <label for="tempat_lahir"> Tempat lahir  </label>
+                                        <input class="form-control" type="text" name="tempat_lahir" id="tempat_lahir" value="<?php echo $df["tempat_lahir"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="golongan_darah"> Golongan Darah  </label>
+                                        <input class="form-control" type="text" name="golongan_darah" id="golongan_darah" value="<?php echo $df["golongan_darah"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="agama"> Agama  </label>
+                                        <input class="form-control" type="text" name="agama" id="agama" value="<?php echo $df["agama"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="nama_ayah"> Nama Ayah  </label>
+                                        <input class="form-control" type="text" name="nama_ayah" id="nama_ayah" value="<?php echo $df["nama_ayah"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="nama_ibu"> Nama Ibu  </label>
+                                        <input class="form-control" type="text" name="nama_ibu" id="nama_ibu" value="<?php echo $df["nama_ibu"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="no_hp"> No HP  </label>
+                                        <input class="form-control" type="text" name="no_hp" id="no_hp" value="<?php echo $df["no_hp"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="nama_panggilan"> Nama Panggilan  </label>
+                                        <input class="form-control" type="text" name="nama_panggilan" id="nama_panggilan" value="<?php echo $df["nama_panggilan"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="motto"> Motto  </label>
+                                        <input class="form-control" type="text" name="motto" id="motto" value="<?php echo $df["motto"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="anak_ke"> Anak Ke-  </label>
+                                        <input class="form-control" type="text" name="anak_ke" id="anak_ke" value="<?php echo $df["anak_ke"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="tinggi"> Tinggi Badan  </label>
+                                        <input class="form-control" type="text" name="tinggi" id="tinggi" value="<?php echo $df["tinggi"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="berat"> Berat Badan  </label>
+                                        <input class="form-control" type="text" name="berat" id="berat" value="<?php echo $df["berat"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="no_ortu"> No HP Orang Tua  </label>
+                                        <input class="form-control" type="text" name="no_ortu" id="no_ortu" value="<?php echo $df["no_ortu"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="alamat_ortu"> Alamat Orang Tua  </label>
+                                        <input class="form-control" type="text" name="alamat_ortu" id="alamat_ortu" value="<?php echo $df["alamat_ortu"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="hobby"> Hobby  </label>
+                                        <input class="form-control" type="text" name="hobby" id="hobby" value="<?php echo $df["hobby"]; ?>">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="penyakit"> Penyakit yang pernah diderita anak  </label>
+                                        <input class="form-control" type="text" name="penyakit" id="penyakit" value="<?php echo $df["penyakit"]; ?>">
                                     </div>
                                 </div>
 
